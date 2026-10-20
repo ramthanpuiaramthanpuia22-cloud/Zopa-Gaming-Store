@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zopa Gaming Store</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0e17;color:white;font-family:Arial,sans-serif}
+header{padding:20px;background:#151b2b;border-bottom:1px solid #30384e}
+.logo{font-size:24px;font-weight:bold;color:#65e7ff}
+main{max-width:800px;margin:auto;padding:20px}
+.hero{padding:25px 20px;border-radius:16px;background:linear-gradient(135deg,#243e72,#54266c)}
+h1{font-size:28px;margin:0 0 10px}
+p{color:#c3cbe0;line-height:1.5}
+h2{margin-top:28px}
+.games{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.game{background:#171d2c;border:1px solid #30384e;border-radius:14px;padding:16px}
+.icon{font-size:36px}
+.price{color:#65e7ff;font-weight:bold}
+button{background:#65e7ff;color:#08111b;border:0;border-radius:8px;padding:12px;font-weight:bold;width:100%;margin-top:10px}
+footer{text-align:center;padding:25px;color:#8f9ab2;font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="logo">ZOPA GAMING STORE</div><p>YOUR GAMING TOP-UP DESTINATION</p></header>
+<main>
+<section class="hero">
+<h1>Level Up Your Game 🎮</h1>
+<p>Find your game and explore top-up packages in one place.</p>
+</section>
+<h2>Popular Games</h2>
+<section class="games">
+<div class="game"><div class="icon">💎</div><h3>Game One</h3><p>Diamond packages</p><div class="price">From ₹50</div><button onclick="pick('Game One')">View Packages</button></div>
+<div class="game"><div class="icon">🎯</div><h3>Game Two</h3><p>Coin packages</p><div class="price">From ₹99</div><button onclick="pick('Game Two')">View Packages</button></div>
+<div class="game"><div class="icon">⚔️</div><h3>Game Three</h3><p>Game credits</p><div class="price">From ₹30</div><button onclick="pick('Game Three')">View Packages</button></div>
+<div class="game"><div class="icon">🚀</div><h3>Game Four</h3><p>Recharge packages</p><div class="price">From ₹79</div><button onclick="pick('Game Four')">View Packages</button></div>
+</section>
+</main>
+<footer>Zopa Gaming Store · Demo website</footer>
+<script>
+function pick(game){alert(game+' selected! Real packages will be added next.')}
+</script>
+</body>
+</html>
